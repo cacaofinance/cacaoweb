@@ -3,7 +3,7 @@ import { PoolConfig, QuoteToken, PoolCategory } from './types'
 const pools: PoolConfig[] = [
   {
     sousId: 0,
-    tokenName: 'SPC',
+    tokenName: 'CACAO',
     tokenAddress: '0x82D62d4073eCDcfB650752D73f42834474CaF0cE',
     stakingTokenName: QuoteToken.CAKE,
     stakingTokenAddress: '0x82D62d4073eCDcfB650752D73f42834474CaF0cE',
@@ -12,7 +12,7 @@ const pools: PoolConfig[] = [
       56: '0x3EF9E4821B35Aba65cdA7247C55696bCBF5e6DA7',
     },
     poolCategory: PoolCategory.CORE,
-    projectLink: 'https://svy.finance/',
+    projectLink: 'https://cacaodefi.finance/',
     harvest: true,
     tokenPerBlock: '1',
     sortOrder: 1,

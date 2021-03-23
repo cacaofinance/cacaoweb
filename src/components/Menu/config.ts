@@ -11,11 +11,11 @@ const config: MenuEntry[] = [
     icon: 'TradeIcon',
     items: [
       {
-        label: 'Exchange CACAO',
+        label: 'Exchange',
         href: 'https://exchange.cacaodefi.finance/#/swap?outputCurrency=0x93af74C2DBD8C6bb2D2914C243e0271781A5F465',
       },
       {
-        label: 'Liquidity CACAO',
+        label: 'Liquidity',
         href: 'https://exchange.cacaodefi.finance/#/add/0x93af74c2dbd8c6bb2d2914c243e0271781a5f465/BNB',
       },
     ],
@@ -29,7 +29,12 @@ const config: MenuEntry[] = [
     label: 'Pools',
     icon: 'PoolIcon',
     href: '/pools',
-  }
+  },
+  {
+      label: "Lottery",
+      icon: "TicketIcon",
+      href: "/lottery",
+  },
 ]
 
 export default config

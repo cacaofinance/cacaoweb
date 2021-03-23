@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     background-color: ${({ theme }) => theme.colors.background};
-    background-size: cover; 
+    background-size: cover;
     background-image: url('/images/background1.jpg');
     img {
       height: auto;

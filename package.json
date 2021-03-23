@@ -2,7 +2,7 @@
   "name": "pancake-frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://svy.finance/",
+  "homepage": "https://cacaodefi.finance/",
   "scripts": {
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "start": "react-scripts start",
