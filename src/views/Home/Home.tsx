@@ -5,6 +5,7 @@ import useI18n from 'hooks/useI18n'
 import Page from 'components/layout/Page'
 import FarmStakingCard from 'views/Home/components/FarmStakingCard'
 import CakeStats from 'views/Home/components/CakeStats'
+import EmbebedTwitter from 'views/Home/components/EmbebedTwitter'
 
 const Hero = styled.div`
   align-items: center;
@@ -67,6 +68,9 @@ const Home: React.FC = () => {
           <FarmStakingCard />
           <CakeStats />
         </Cards>
+        <Cards>
+          <EmbebedTwitter />
+          </Cards>
       </div>
     </Page>
   )
