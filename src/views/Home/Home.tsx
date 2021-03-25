@@ -8,6 +8,25 @@ import CakeStats from 'views/Home/components/CakeStats'
 import EmbebedTwitter from 'views/Home/components/EmbebedTwitter'
 import TotalValueLockedCard from './components/TotalValueLockedCard'
 
+const ImageStyle = styled.div`
+position: absolute;
+  right: 70px; 
+  top: 70px;
+  @media only screen and (max-width: 620px) and (min-width: 501px) {  
+    right: -55px !important;
+    width: 135px;
+  }  
+  @media only screen and (max-width: 500px) and (min-width: 341px) {  
+    right: -55px !important;
+    width: 135px;
+  }  
+  @media only screen and (max-width: 340px) and (min-width: 5px)  {  
+    right: -55px !important;
+    width: 135px;
+  } 
+
+`
+
 const Hero = styled.div`
   align-items: center;
   background-image: url('/images/pan-bg-mobile.svg');
@@ -59,6 +78,10 @@ const Home: React.FC = () => {
   return (
     <Page>
       <Hero>
+        <ImageStyle>
+          <img src="/images/logoT.png" className="imgLogo" alt="" width="300" />
+        </ImageStyle>
+        
         <Heading as="h1" size="xl" color="primary">
           {TranslateString(576, 'CACAO Finance')}
         </Heading>
