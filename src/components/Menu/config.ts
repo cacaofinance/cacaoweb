@@ -42,7 +42,7 @@ const config: MenuEntry[] = [
   },
   {
     label: "Roadmap",
-    icon: "TicketIcon",
+    icon: "RoadmapIcon",
     href: "/roadmap"
   },
 ]
