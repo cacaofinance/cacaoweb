@@ -11,8 +11,7 @@ import CakeWalletBalance from './CakeWalletBalance'
 
 const StyledFarmStakingCard = styled(Card)`
   min-height: 376px;
-  border: 2px solid #000000;
-  background-color: rgba(78, 161, 72, 0.3);
+  background-color: white;
 `
 
 const Block = styled.div`

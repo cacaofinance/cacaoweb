@@ -35,6 +35,16 @@ const config: MenuEntry[] = [
       icon: "TicketIcon",
       href: "/lottery",
   },
+  {
+    label: "CacaoPaper",
+    icon: "PaperIcon",
+    href: "/paper"
+  },
+  {
+    label: "Roadmap",
+    icon: "TicketIcon",
+    href: "/roadmap"
+  },
 ]
 
 export default config

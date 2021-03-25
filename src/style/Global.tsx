@@ -19,6 +19,22 @@ const GlobalStyle = createGlobalStyle`
       height: auto;
       max-width: 100%;
     }
+    @media only screen and (max-width: 620px) and (min-width: 501px) {  
+      background-image: none;
+      background: rgb(248,206,46);
+      background: radial-gradient(circle, rgba(248,206,46,0.9920343137254902) 0%, rgba(122,74,65,1) 62%);
+    }  
+    @media only screen and (max-width: 500px) and (min-width: 341px) {  
+      background-image: none;
+      background: rgb(248,206,46);
+      background: radial-gradient(circle, rgba(248,206,46,0.9920343137254902) 0%, rgba(122,74,65,1) 62%);
+    }  
+    @media only screen and (max-width: 340px) and (min-width: 5px)  {  
+      background-image: none;
+      background: rgb(248,206,46);
+      background: radial-gradient(circle, rgba(248,206,46,0.9920343137254902) 0%, rgba(122,74,65,1) 62%);
+      
+    } 
   }
 `
 

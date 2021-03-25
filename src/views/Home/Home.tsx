@@ -6,6 +6,7 @@ import Page from 'components/layout/Page'
 import FarmStakingCard from 'views/Home/components/FarmStakingCard'
 import CakeStats from 'views/Home/components/CakeStats'
 import EmbebedTwitter from 'views/Home/components/EmbebedTwitter'
+import TotalValueLockedCard from './components/TotalValueLockedCard'
 
 const Hero = styled.div`
   align-items: center;
@@ -17,7 +18,7 @@ const Hero = styled.div`
   flex-direction: column;
   margin: auto;
   margin-bottom: 32px;
-  padding-top: 116px;
+  margin-top: 64px;
   text-align: center;
 
   ${({ theme }) => theme.mediaQueries.lg} {
@@ -67,10 +68,11 @@ const Home: React.FC = () => {
       <div>
         <Cards>
           <FarmStakingCard />
-          <CakeStats />
+          <EmbebedTwitter />
         </Cards>
         <Cards>
-          <EmbebedTwitter />
+          <CakeStats />
+          <TotalValueLockedCard />
           </Cards>
       </div>
     </Page>

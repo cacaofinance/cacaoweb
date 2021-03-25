@@ -10,8 +10,8 @@ import CardValue from './CardValue'
 const StyledCakeStats = styled(Card)`
   margin-left: auto;
   margin-right: auto;
-  border: 2px solid #000000;
-  background-color: rgba(78, 161, 72, 0.3);
+  
+  background-color: white;
 `
 
 const Row = styled.div`
@@ -20,6 +20,11 @@ const Row = styled.div`
   font-size: 14px;
   justify-content: space-between;
   margin-bottom: 8px;
+`
+
+const TVL = styled.div`
+  text-align:center;
+  margin-top:10px;
 `
 
 const CakeStats = () => {
@@ -46,6 +51,7 @@ const CakeStats = () => {
           <Text fontSize="14px">{TranslateString(540, 'New CACAO/block')}</Text>
           <CardValue fontSize="14px" decimals={0} value={1} />
         </Row>
+        
       </CardBody>
     </StyledCakeStats>
   )

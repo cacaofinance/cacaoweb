@@ -11,6 +11,8 @@ import SuspenseWithChunkError from './components/SuspenseWithChunkError'
 import PageLoader from './components/PageLoader'
 import Pools from './views/Pools'
 import history from './routerHistory'
+import PDFReader from './views/Home/components/PDFReader'
+import Roadmap from './views/Home/components/Roadmap'
 
 // Route-based code splitting
 // Only pool is included in the main bundle because of it's the most visited page
@@ -59,6 +61,12 @@ const App: React.FC = () => {
             </Route>
             <Route exact path="/syrup">
               <Redirect to="/pools" />
+            </Route>
+            <Route exact path="/paper">
+              <PDFReader />
+            </Route>
+            <Route exact path="/roadmap">
+              <Roadmap />
             </Route>
             {/* 404 */}
             <Route component={NotFound} />

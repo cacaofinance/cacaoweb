@@ -32,23 +32,21 @@ const Farm: React.FC = () => {
   )
 
   return (
+    <>
+    <Header>
+        <Heading as="h1" size="xl" color="primary" mb="24px">
+          {TranslateString(999, 'CACAO Pool')}
+        </Heading>
+        <Heading size="md" color="primary">
+          {TranslateString(999, 'Stake CACAO to earn CACAO.')}
+          <br />
+          {TranslateString(999, 'You can unstake at any time.')}
+          <br />
+          {TranslateString(999, 'Rewards are calculated per block.')}
+        </Heading>
+      </Header>
     <Page>
-      <Hero>
-        <div>
-          <Heading as="h1" size="xxl" mb="16px" color="primary">
-            {TranslateString(738, 'CACAO Pool')}
-          </Heading>
-          <ul>
-            <li>{TranslateString(580, 'Stake CACAO to earn CACAO.')}</li>
-            <li>{TranslateString(580, 'Stake BUSD to earn CACAO.')}</li>
-            <li>{TranslateString(486, 'You can unstake at any time.')}</li>
-            <li>{TranslateString(406, 'Rewards are calculated per block.')}</li>
-          </ul>
-        </div>
-        <img src="/images/coin.png" alt="CACAO POOL icon" width={200} height={191} />
-      </Hero>
-      <PoolTabButtons stackedOnly={stackedOnly} setStackedOnly={setStackedOnly} />
-      <Divider />
+      
       <FlexLayout>
         <Route exact path={`${path}`}>
           <>
@@ -60,9 +58,22 @@ const Farm: React.FC = () => {
 
       </FlexLayout>
     </Page>
+    </>
   )
 }
+const Header = styled.div`
+  padding: 32px 0px;
+  background: transparent;
+  text-align:center;
+  margin-top: 64px;
+  padding-left: 16px;
+  padding-right: 16px;
 
+  ${({ theme }) => theme.mediaQueries.sm} {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+`
 const Hero = styled.div`
   align-items: center;
   color: ${({ theme }) => theme.colors.primary};
@@ -73,6 +84,7 @@ const Hero = styled.div`
   margin-right: auto;
   max-width: 250px;
   padding: 48px 0;
+  text-align: center;
   ul {
     margin: 0;
     padding: 0;

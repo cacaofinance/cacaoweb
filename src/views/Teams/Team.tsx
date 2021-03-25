@@ -17,7 +17,7 @@ const Team = () => {
   const team = useTeam(id)
 
   if (!isValidTeamId) {
-    return <Redirect to="/404" />
+    return <PageLoader />
   }
 
   if (!team) {
