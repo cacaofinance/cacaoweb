@@ -15,13 +15,22 @@ const Row = styled.div`
   font-size: 14px;
   justify-content: space-between;
   margin-top: 20px;
+  @media only screen and (max-width: 620px) and (min-width: 501px) {  
+      margin-top: 100px;
+    }  
+    @media only screen and (max-width: 500px) and (min-width: 341px) {  
+      margin-top: 100px;
+    }  
+    @media only screen and (max-width: 340px) and (min-width: 5px)  {  
+      margin-top: 100px;
+    } 
 `
 
 const Roadmap = () => {
 
   return (
       <Row>
-        <img src="/images/roadmap.jpg" alt="" />
+        <img src="/images/roadmap2.png" alt="" />
       </Row>
   )
   
