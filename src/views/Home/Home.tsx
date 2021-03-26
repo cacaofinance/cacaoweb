@@ -7,6 +7,7 @@ import FarmStakingCard from 'views/Home/components/FarmStakingCard'
 import CakeStats from 'views/Home/components/CakeStats'
 import EmbebedTwitter from 'views/Home/components/EmbebedTwitter'
 import TotalValueLockedCard from './components/TotalValueLockedCard'
+import Countdown from './components/Countdown'
 
 const ImageStyle = styled.div`
 position: absolute;
@@ -36,8 +37,8 @@ const Hero = styled.div`
   justify-content: center;
   flex-direction: column;
   margin: auto;
-  margin-bottom: 32px;
-  margin-top: 64px;
+  margin-bottom: 60px;
+  margin-top: 120px;
   text-align: center;
 
   ${({ theme }) => theme.mediaQueries.lg} {
@@ -87,8 +88,11 @@ const Home: React.FC = () => {
         </Heading>
         <Text color="primary">{TranslateString(578, 'Smart agriculture for smart people')}</Text>
 <Text color="primary">{TranslateString(578, 'The before and after of passive earnings on the Binance Smart Chain.')}</Text>
+<Countdown />
       </Hero>
       <div>
+          
+
         <Cards>
           <FarmStakingCard />
           <EmbebedTwitter />
