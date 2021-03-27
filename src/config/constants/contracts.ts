@@ -5,7 +5,7 @@ export default {
   },
   svy: {
     97: '0x54DBc5Ec113C64e0F103035C8275Cd3e3c65Db82',
-    56: '0x93af74c2dbd8c6bb2d2914c243e0271781a5f465',
+    56: '0x3bFeCBfd570401CB71a04aa9A74e7Dc62D515202',
   },
   syrup: {
     97: '0x46FB51DeF906d5bFb8E8B618620293cDCbB30898',

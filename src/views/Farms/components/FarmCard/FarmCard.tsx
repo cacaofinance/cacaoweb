@@ -147,7 +147,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
       )}
       <Flex justifyContent="space-between">
         <Text>{TranslateString(318, 'Earn')}:</Text>
-        <Text bold>SPC</Text>
+        <Text bold>CACAO</Text>
       </Flex>
       <CardActionsContainer farm={farm} account={account} addLiquidityUrl={addLiquidityUrl} />
       <Divider />

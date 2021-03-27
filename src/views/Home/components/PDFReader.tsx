@@ -10,7 +10,7 @@ import { MobilePDFReader } from 'reactjs-pdf-reader';
 const StyledPDFReader = styled(Card)`
   margin-left: auto;
   margin-right: auto;
-  
+
   background-color: rgba(78, 161, 72, 0.3);
 `
 
@@ -34,7 +34,7 @@ const PDFReader = () => {
   const cakeSupply = totalSupply ? getBalanceNumber(totalSupply) - burnedBalance : 0
 
   return <div style={{overflow:'scroll',height:800}}>
-            <MobilePDFReader url="http://localhost:3000/images/cacao.pdf"/>
+            <MobilePDFReader url="https://cacaodefi.finance/images/cacao.pdf"/>
            </div>
 }
 

@@ -51,7 +51,7 @@ export const useFarms = (): Farm[] => {
 }
 
 export const useFarmFromPid = (pid): Farm => {
-  
+
   const farm = useSelector((state: State) => state.farms.data.find((f) => f.pid === pid))
   return farm
 }
@@ -108,12 +108,12 @@ export const usePriceCakeBusd = (): BigNumber => {
 }
 export const usePriceSPCBusd = (): BigNumber => {
   const pid = 1 // CAKE-BNB LP
-  const priceSPC = useGetApiPrice("spc")
+  const priceSPC = useGetApiPrice("cacao")
   return new BigNumber(priceSPC)
 }
 export const usePriceSVYBusd = (): BigNumber => {
   const pid = 1 // CAKE-BNB LP
-  const priceSVY = useGetApiPrice("svy")
+  const priceSVY = useGetApiPrice("cacao")
   return new BigNumber(priceSVY)
 }
 
