@@ -157,40 +157,8 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
           <OldSyrupTitle hasBalance={accountHasStakedBalance} />
         )}
         <Label isFinished={isFinished && sousId !== 0} text={TranslateString(330, `${tokenName} earned`)} />
-        <StyledCardActions style={{display:"none"}}>
-          {!account && <UnlockButton />}
-          {account &&
-            (needsApproval && !isOldSyrup ? (
-              <div style={{ flex: 1 }}>
-                <Button disabled={isFinished || requestedApproval} onClick={handleApprove} width="100%">
-                  Approve
-                </Button>
-              </div>
-            ) : (
-              <>
-                <Button
-                  disabled={stakedBalance.eq(new BigNumber(0)) || pendingTx}
-                  onClick={
-                    isOldSyrup
-                      ? async () => {
-                          setPendingTx(true)
-                          await onUnstake('0', stakingTokenDecimals)
-                          setPendingTx(false)
-                        }
-                      : onPresentWithdraw
-                  }
-                >
-                  {`Unstake ${stakingTokenName}`}
-                </Button>
-                <StyledActionSpacer />
-                {!isOldSyrup && (
-                  <IconButton disabled={isFinished && sousId !== 0} onClick={onPresentDeposit}>
-                    <AddIcon color="white" />
-                  </IconButton>
-                )}
-              </>
-            ))}
-        </StyledCardActions>
+        {/* CHANGES 1 */}
+        
         <StyledDetails>
           <div>{TranslateString(736, 'APR')}:</div>
           {isFinished || isOldSyrup || !apy ? (

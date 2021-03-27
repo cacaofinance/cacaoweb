@@ -150,7 +150,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
         <Text>{TranslateString(318, 'Earn')}:</Text>
         <Text bold>CACAO</Text>
       </Flex>
-      <CardActionsContainer farm={farm} account={account} addLiquidityUrl={addLiquidityUrl} />
+      {/* CHANGES 2 */}
       <Divider />
       <ExpandableSectionButton
         onClick={() => setShowExpandableSection(!showExpandableSection)}
