@@ -121,7 +121,8 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
   return (
     <Card isActive={isCardActive} isFinished={isFinished && sousId !== 0}>
       {isFinished && sousId !== 0 && <PoolFinishedSash />}
-      <div style={{ padding: '24px' }}>
+      <div style={{ padding: '24px', position:"relative" }}>
+        <img src="/images/cs.png" alt="" style={{position: "absolute", right:18, top:-1, width: "150px"}} />
         <CardTitle isFinished={isFinished && sousId !== 0}>
           {isOldSyrup && '[OLD]'} {tokenName} {TranslateString(348, 'Pool')}
         </CardTitle>
@@ -156,7 +157,7 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
           <OldSyrupTitle hasBalance={accountHasStakedBalance} />
         )}
         <Label isFinished={isFinished && sousId !== 0} text={TranslateString(330, `${tokenName} earned`)} />
-        <StyledCardActions>
+        <StyledCardActions style={{display:"none"}}>
           {!account && <UnlockButton />}
           {account &&
             (needsApproval && !isOldSyrup ? (
