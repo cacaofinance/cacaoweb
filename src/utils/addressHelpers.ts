@@ -10,6 +10,9 @@ export const getAddress = (address: Address): string => {
 export const getCakeAddress = () => {
   return getAddress(addresses.cake)
 }
+export const getCACAOAddress = () => {
+  return getAddress(addresses.cacao)
+}
 export const getMasterChefAddress = () => {
   return getAddress(addresses.masterChef)
 }

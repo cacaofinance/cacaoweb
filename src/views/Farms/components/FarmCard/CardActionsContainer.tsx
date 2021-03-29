@@ -69,7 +69,7 @@ const CardActions: React.FC<FarmCardActionsProps> = ({ farm, account, addLiquidi
   }
 
   return (
-    <Action style={{display:"none"}}>
+    <Action>
       <Flex>
         <Text bold textTransform="uppercase" color="secondary" fontSize="12px" pr="3px">
           {/* TODO: Is there a way to get a dynamic value here from useFarmFromSymbol? */}

@@ -7,6 +7,10 @@ export default {
     97: '0x54DBc5Ec113C64e0F103035C8275Cd3e3c65Db82',
     56: '0x3bFeCBfd570401CB71a04aa9A74e7Dc62D515202',
   },
+  cacao: {
+    97: '0x3bfecbfd570401cb71a04aa9a74e7dc62d515202',
+    56: '0x3bfecbfd570401cb71a04aa9a74e7dc62d515202',
+  },
   syrup: {
     97: '0x46FB51DeF906d5bFb8E8B618620293cDCbB30898',
     56: '0xB975537343AFe27F74cb0B5fE5FaC27d78C9994f',

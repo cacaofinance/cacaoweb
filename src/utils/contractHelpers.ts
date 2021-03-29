@@ -17,6 +17,7 @@ import {
   getMasterChefAddress,
   getPointCenterIfoAddress,
   getClaimRefundAddress,
+  getCACAOAddress
 } from 'utils/addressHelpers'
 
 // ABI
@@ -80,4 +81,7 @@ export const getMasterchefContract = (web3?: Web3) => {
 }
 export const getClaimRefundContract = (web3?: Web3) => {
   return getContract(claimRefundAbi, getClaimRefundAddress(), web3)
+}
+export const getCACAOContract = (web3?: Web3) => {
+  return getContract(cakeAbi, getCACAOAddress(), web3)
 }
